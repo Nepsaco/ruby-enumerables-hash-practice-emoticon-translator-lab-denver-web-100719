@@ -13,7 +13,7 @@ end
 
 def get_japanese_emoticon(file, emoticon)
     library = load_library(file) 
-    if library[:get_emoticon].has_keys?(emoticon)
+    if library[:get_emoticon].has_key?(emoticon)
       library[:get_emoticon][emoticon]
     else
       puts "Sorry this is not a known emoticon :("
