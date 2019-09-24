@@ -18,8 +18,8 @@ def get_japanese_emoticon(file, emoticon)
     else
       puts "Sorry this is not a known emoticon :("
     end
-    binding.pry
 end
+    binding.pry
 
 def get_english_meaning
   # code goes here
