@@ -4,8 +4,8 @@ def load_library (file)
   emoticon_hash = YAML.load_file(file)
   emoticon_hash.each do |meaning|
     emoticon_hash[:get_meaning].push(meaning)
-    binding.pry
   end
+    binding.pry
 end
 
 def get_japanese_emoticon
