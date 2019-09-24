@@ -3,6 +3,7 @@ require 'pry'
 
 def load_library (file)
   emoticon_hash = YAML.load_file(file)
+  make_keys = 
   emoticon_hash.each do |meaning, emoticon|
     if emoticon_hash[:get_meaning] == NIL
       emoticon_hash[:get_meaning] = {}
