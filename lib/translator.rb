@@ -3,10 +3,10 @@ require 'pry'
 def load_library (file)
   emoticon_hash = YAML.load_file(file)
 end
-  binding.pry
 
 def get_japanese_emoticon
-  # code goes here
+  
+  binding.pry
 end
 
 def get_english_meaning
