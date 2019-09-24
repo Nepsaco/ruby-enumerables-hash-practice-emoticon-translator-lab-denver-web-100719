@@ -7,6 +7,7 @@ def load_library (file)
   emoticon_hash.each do |meaning, emoticon|
     meaning = make_keys[:get_meaning][emoticon[1]]
     binding.pry
+  end
 end
 
 def get_japanese_emoticon
