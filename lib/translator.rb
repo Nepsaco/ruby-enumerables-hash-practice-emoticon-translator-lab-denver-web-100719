@@ -16,16 +16,15 @@ def get_japanese_emoticon(file, emoticon)
     if library[:get_emoticon].has_key?(emoticon)
       library[:get_emoticon][emoticon]
     else
-      "Sorry this is not a known emoticon :("
+      "Sorry, that emoticon was not found"
     end
 end
-    binding.pry
 
 def get_english_meaning(file, japanese_emoticon)
   library = load_library(file)
   if library[:get_meaning].has_key?(japanese_emoticon)
     library[:get_meaning][japanese_emoticon]
   else
-    "Sorry this is not a known emoticon :("
+    "Sorry, that emoticon was not found"
   end
 end
