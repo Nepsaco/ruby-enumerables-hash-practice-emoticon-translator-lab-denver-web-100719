@@ -11,8 +11,13 @@ def load_library (file)
   make_keys
 end
 
-def get_japanese_emoticon
-  
+def get_japanese_emoticon(file, emoticon)
+    library = load_library(file) 
+    if library[:get_emoticon].has_keys?(emoticon)
+      library[:get_emoticon][emoticon]
+    else
+      puts "Sorry this is not a known emoticon :("
+    end
     binding.pry
 end
 
