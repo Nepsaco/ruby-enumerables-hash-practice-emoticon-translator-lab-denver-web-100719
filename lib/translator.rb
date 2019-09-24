@@ -9,6 +9,7 @@ def load_library (file)
     make_keys[:get_emoticon][emoticon[0] = emoticon[1]
     binding.pry
   end
+  make_keys
 end
 
 def get_japanese_emoticon
