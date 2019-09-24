@@ -5,7 +5,8 @@ def load_library (file)
   emoticon_hash = YAML.load_file(file)
   make_keys = {get_meaning: {}, get_emoticon: {}}
   emoticon_hash.each do |meaning, emoticon|
-    meaning = make_keys[:get_meaning][emoticon[1]]
+    make_keys[:get_meaning][emoticon[1]] = meaning
+    emoticon
     binding.pry
   end
 end
