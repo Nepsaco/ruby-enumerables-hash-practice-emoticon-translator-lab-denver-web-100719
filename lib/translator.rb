@@ -6,7 +6,7 @@ def load_library (file)
   make_keys = {get_meaning: {}, get_emoticon: {}}
   emoticon_hash.each do |meaning, emoticon|
     make_keys[:get_meaning][emoticon[1]] = meaning
-    make_keys[:get_emoticon][emoticon[0] = emoticon[1]
+    make_keys[:get_emoticon][emoticon[0]] = emoticon[1]
   end
   make_keys
     binding.pry
