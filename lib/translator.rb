@@ -16,7 +16,7 @@ def get_japanese_emoticon(file, emoticon)
     if library[:get_emoticon].has_key?(emoticon)
       library[:get_emoticon][emoticon]
     else
-      puts "Sorry this is not a known emoticon :("
+      return "Sorry this is not a known emoticon :("
     end
 end
     binding.pry
